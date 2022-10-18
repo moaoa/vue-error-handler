@@ -1,4 +1,5 @@
 <script setup>
+// when you remove the async keyword the error is captured
 const  func = async (arg) => {
   if(!arg){
     throw new Error('this is an error')// just to mimic an error (this error is not captured by the app.config.errorHandler in the main.js file)
